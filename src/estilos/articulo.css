@@ -1,0 +1,154 @@
+.contenedor-articulos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+}
+
+.caja-articulo {
+	display: flex;
+	flex-direction: column;
+	width: 16%;
+	margin-top: 10px;
+	text-decoration: none;
+	color: black;
+}
+
+.caja_imagen-articulo {
+	display: flex;
+	width: 100%;
+
+}
+
+.nombre-txt {
+	font-weight: bold;
+}
+
+.imagen-articulo {
+	width: 100%;
+}
+
+.descripciones {
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-top: 5px;
+	font-size: 6rem;
+}
+
+.no-vendidos {
+	font-size: 3rem;
+}
+
+.precio-txt {
+	font-family: 'Fraunces', serif;
+	font-weight: bold;
+	color: coral;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 1024px) {
+
+	.contenedor-articulos {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 5px;
+		gap: 0;
+	}
+
+	.caja-articulo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 20%;
+		margin-top: 10px;
+		text-decoration: none;
+		color: black;
+	}
+
+	.caja_imagen-articulo {
+		display: flex;
+		justify-content: center;
+	}
+
+	.nombre-txt {
+		font-weight: bold;
+	}
+
+	.imagen-articulo {
+		width: 90%;
+	}
+	
+	.descripciones {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 90%;
+		font-family: 'Roboto Condensed', sans-serif;
+		margin-top: 5px;
+		font-size: 12px;
+	}	
+
+	.no-vendidos {
+		font-size: 8px;
+	}
+	
+	.precio-txt {
+		font-family: 'Fraunces', serif;
+		font-weight: bold;
+		color: coral;
+	}
+}
+
+@media only screen and (min-width: 200px) and (max-width: 400px) {
+
+	.contenedor-articulos {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 0;
+		margin: 5px;
+	}
+
+	.caja-articulo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		margin-top: 10px;
+		text-decoration: none;
+		color: black;
+	}
+
+	.caja_imagen-articulo {
+		display: flex;
+		justify-content: center;
+	}
+
+	.nombre-txt {
+		font-weight: bold;
+		
+	}
+
+	.imagen-articulo {
+		width: 90%;
+	}
+	
+	.descripciones {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 90%;
+		font-family: 'Roboto Condensed', sans-serif;
+		margin-top: 5px;
+		font-size: 18px;
+	}
+
+	.no-vendidos {
+		font-size: 10px;
+	}
+	
+	.precio-txt {
+		font-family: 'Fraunces', serif;
+		font-weight: bold;
+		color: coral;
+	}
+}
