@@ -1,25 +1,20 @@
-html,
-body {}
-
-body {}
-
 .header-container {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-width: 100%;
-height: 5%;
-align-items: center;
-flex-direction: row;
-background-image: url(../imagenes/img-paginas/banner2.webp);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 5%;
+  align-items: center;
+  flex-direction: row;
+  background-image: url(../imagenes/img-paginas/banner2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .banner-superior {
-width: 100%;
-height: auto;
-position: absolute;
+  width: 100%;
+  height: auto;
+  position: absolute;
 }
 
 .img_logo {
@@ -32,13 +27,12 @@ position: absolute;
   display: flex;
   justify-content: end;
   align-self: end;
-  margin-bottom: 5%;
-  margin-right: 7%;
+  margin-bottom: 2%;
   gap: 5%;
 }
 
 .menu_superior-elemento {
-  font-size: 6em;
+  font-size: 1.5rem;
   text-decoration: none;
   color: gray;
 
@@ -46,31 +40,36 @@ position: absolute;
 
 .titulo-aniversario {
   display: flex;
-  font-size: 9rem;
+  font-size: 2rem;
   font-weight: bold;
   justify-content: end;
   margin-right: 7%;
   color: chocolate;
 }
 
-.envio-txt {}
+.banner-temporada {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 0;
 
-.titulo {}
+}
 
-footer {}
+.img_banner_temporada {
+  width: 70%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 .contenedor-menu {
   display: none;
 }
 
-.menu-inferior {}
 
-.contenedor-icono {}
-
-.icono-menu {}
-
+/* ↓↓ TABLET ↓↓ */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
- * {
+  * {
     box-sizing: border-box;
   }
 
@@ -88,16 +87,12 @@ footer {}
   }
 
   .header-container {
-    
+
     height: auto;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-around;
-
     padding: 5px;
     background-image: url(../imagenes/img-paginas/banner.webp);
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; */
   }
 
   .img_logo {
@@ -113,8 +108,23 @@ footer {}
     display: flex;
     align-items: center;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 2.5rem;
     font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .banner-temporada {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+  }
+  
+  .img_banner_temporada {
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
   .envio-txt {
@@ -124,13 +134,7 @@ footer {}
     opacity: 70%;
   }
 
-  .titulo {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 18px;
-    margin-top: 10px;
-  }
+  
 
   footer {
     padding-bottom: 85px
@@ -170,7 +174,7 @@ footer {}
 
 }
 
-
+/* ↓↓ MOVIL ↓↓ */
 @media screen and (max-width: 600px) {
   * {
     box-sizing: border-box;
@@ -190,7 +194,7 @@ footer {}
   }
 
   .header-container {
- 
+
     height: auto;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-around;
@@ -219,19 +223,26 @@ footer {}
     font-family: 'Roboto Condensed', sans-serif;
   }
 
+  .banner-temporada {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+  }
+  
+  .img_banner_temporada {
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
   .envio-txt {
     background-color: palevioletred;
     padding: 5px;
     width: 100%;
     opacity: 70%;
-  }
-
-  .titulo {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 18px;
-    margin-top: 10px;
   }
 
   footer {

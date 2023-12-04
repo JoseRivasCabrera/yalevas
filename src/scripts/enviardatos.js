@@ -16,7 +16,7 @@ const insertar = () => {
 
 </a>`
 
-  var numeroDeElementos = 200;
+  var numeroDeElementos = 20;
 
   let cantidadElementos = '';
 
