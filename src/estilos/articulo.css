@@ -45,7 +45,7 @@
 }
 
 /* ↓↓ TABLET ↓↓ */
-@media only screen and (min-width: 501px) and (max-width: 1024px) {
+@media only screen and (min-width: 526px) and (max-width: 1024px) {
 
 	.contenedor-articulos {
 		display: flex;
@@ -101,7 +101,7 @@
 }
 
 /* ↓↓ MOVIL ↓↓ */
-@media only screen and (min-width: 200px) and (max-width: 500px) {
+@media only screen and (min-width: 200px) and (max-width: 525px) {
 
 	.contenedor-articulos {
 		display: flex;
