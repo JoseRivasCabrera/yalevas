@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/estilos/reset.css">
+    <link rel="stylesheet" href="src/estilos/header.css">
+    <link rel="stylesheet" href="src/estilos/form.css">
+    <link rel="stylesheet" href="src/estilos/matriz.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-container">
+
+        <a href="index.html">
+            <img src="src/imagenes/img-paginas/YALEVAS-STORE-KIDS.webp" alt="LOGO" class="img_logo">
+        </a>
+        
+        <nav class="menu-superior">
+          <a href="https://tinyurl.com/Contactowebyalevas" class="menu_superior-elemento">
+            <p>Contacto</p>
+          </a>
+          <a href="" class="menu_superior-elemento">
+            <p>Ubicación</p>
+          </a>
+          <a href="" class="menu_superior-elemento">
+            <p>Nosotros</p>
+          </a>
+        </nav>
+    
+    
+        <h1 class="titulo-aniversario">3° ANIVERSARIO</h1>
+      </header>
+
+<main>
+    <section class="contenedor-principal">
+
+        <div class="box-formulario">
+            <form class="formulario" id="form_de-carga">
+
+                <h2 class="form-name">Datos del Artículo</h2>
+      
+                <div class="form-group">
+                  <input type="text" id="name" class="form-input" placeholder=" ">
+                  <label for="name" class="form-label">Nombre:</label>
+                </div>
+      
+      
+                <div class="box_input-categorie-file">
+      
+                  <label for="file-input" class="custom-file-upload">
+                    <span>Seleccionar Imagen</span>
+                  </label>
+                  <input id="file-input" type="file" />
+      
+                  <div class="text-categorie">
+                    <input type="text" id="categorie" class="form-input" placeholder=" ">
+                    <label for="name" class="form-label">Categoria:</label>
+                  </div>
+                  
+                </div>
+      
+                <div class="caracteristics-article">
+      
+                  <div class="caracteristics-left">
+      
+                    <div class="form_group-caracteristics">
+                      <input type="text" id="key" class="form-input" placeholder=" ">
+                      <label for="key" class="form-label">Id:</label>
+                    </div>
+      
+                    <div class="form_group-caracteristics">
+                      <input type="number" id="discount" class="form-input" placeholder=" ">
+                      <label for="discount" class="form-label">Descuento:</label>
+                    </div>
+      
+                  </div>
+      
+                  <div class="caracteristics-right">
+      
+                    <div class="form_group-caracteristics">
+                      <input type="number" id="the_price" class="form-input" placeholder=" ">
+                      <label for="the_price" class="form-label">Precio:</label>
+                    </div>
+      
+                    <div class="form_group-caracteristics">
+                      <input type="text" id="sales" class="form-input" placeholder=" ">
+                      <label for="sales" class="form-label">Vendidos:</label>
+                    </div>
+      
+                  </div>
+      
+                </div>
+      
+                <div class="form-group">
+                  <textarea type="text" id="description" class="form-input" placeholder="Descripción"></textarea>
+                </div>
+      
+                <button class="btn_create-article" onclick="crearArticulo()">Crear</button>
+      
+              </form>
+        </div>
+        
+    </section>
+</main>
+    
+
+</body>
+</html>
