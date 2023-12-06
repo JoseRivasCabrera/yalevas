@@ -1,0 +1,97 @@
+.caja-articulo {
+width: 20%;
+height: 60%;
+cursor: pointer;
+}
+
+.caja__img-articulo {
+
+}
+
+.img-articulo {
+  width: 100%;
+}
+
+.contenido-articulo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.caja__de-categorias {
+  display: flex;
+  width: 100%;
+}
+
+.caja__nombre-categoria {
+  width: 100%;
+}
+
+.nombre__de-categoria {
+  font-size: 11px;
+}
+
+.caja__numero-ventas {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
+
+.numero-ventas {
+  font-size: 11px;
+}
+
+.nombre__de-articulo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.valores__de-articulo {
+  display: flex;
+  align-items: center;
+  gap: 6%;
+}
+
+.caja__precio-descuento {
+
+}
+
+.precio-descuento {
+font-weight: bold;
+color: chocolate;
+font-size: 20px;
+}
+
+.caja__precio-neto {
+
+}
+
+.precio {
+text-decoration: line-through;
+color: gray;
+font-size: 14px;
+}
+
+.caja__numero-descuento {
+border: 1px solid chocolate;
+}
+
+.descuento {
+  color: chocolate;
+  font-size: 10px;
+}
+
+.caja__de-id {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: chocolate;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.id {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}

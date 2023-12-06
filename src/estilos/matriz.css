@@ -1,6 +1,16 @@
 .contenedor-principal {
   display: flex;
   width: 100%;
+  gap: 5%;
+}
+
+.caja__articulos-matriz {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 549px;
+  overflow: auto;
+  gap: 5%;
 }
 
 /* ↓↓ TABLET ↓↓ */
