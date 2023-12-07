@@ -27,7 +27,7 @@ const insertar = () => {
   contenedorArticulos.innerHTML = cantidadElementos;
 }
 
-insertar();
+// insertar();
 
 const crearArticulo = () => {
   event.preventDefault();
@@ -85,7 +85,7 @@ const crearArticulo = () => {
 
 </a>`
 
-  var numeroDeElementos = 20;
+  var numeroDeElementos = 22;
 
   let cantidadElementos = '';
 

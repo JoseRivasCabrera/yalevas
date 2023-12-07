@@ -1,23 +1,17 @@
 .contenedor-principal {
   display: flex;
+  align-items: center;
   width: 100%;
   gap: 5%;
 }
 
-.caja__articulos-matriz {
-  display: flex;
-  flex-wrap: wrap;
-  width: 90%;
-  height: 549px;
-  overflow: auto;
-  gap: 5%;
-}
+
 
 /* ↓↓ TABLET ↓↓ */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .contenedor-principal {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     width: 100%;
   }
 }
@@ -26,7 +20,7 @@
 @media screen and (max-width: 600px) {
   .contenedor-principal {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     width: 100%;
   }
 }
