@@ -55,7 +55,7 @@
 .valores__de-articulo {
   display: flex;
   align-items: center;
-  gap: 6%;
+  /* gap: 6%; */
 }
 
 .caja__precio-descuento {}
@@ -126,7 +126,7 @@
   .contenido-articulo {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
   }
 
   .caja__de-categorias {
@@ -232,7 +232,7 @@
   .contenido-articulo {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
   }
 
   .caja__de-categorias {
@@ -268,7 +268,7 @@
   .valores__de-articulo {
     display: flex;
     align-items: center;
-    gap: 6%;
+    gap: 5px;
   }
 
   .caja__precio-descuento {}
@@ -276,7 +276,7 @@
   .precio-descuento {
     font-weight: bold;
     color: chocolate;
-    font-size: 14px;
+    font-size: 5px;
   }
 
   .caja__precio-neto {}
@@ -293,7 +293,7 @@
 
   .descuento {
     color: chocolate;
-    font-size: 8px;
+    font-size: 6px;
   }
 
   .caja__de-id {
