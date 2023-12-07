@@ -205,7 +205,7 @@
 }
 
 /* ↓↓ MOVIL ↓↓ */
-@media screen and (max-width: 600px) {
+@media only screen and (min-width: 300px) and (max-width: 600px) {
   .caja__articulos-matriz {
     display: flex;
     justify-content: center;
@@ -245,7 +245,7 @@
   }
 
   .nombre__de-categoria {
-    font-size: 8px;
+    font-size: 6px;
     color: gray;
   }
 
@@ -256,7 +256,7 @@
   }
 
   .numero-ventas {
-    font-size: 8px;
+    font-size: 6px;
     color: gray;
   }
 
@@ -276,7 +276,7 @@
   .precio-descuento {
     font-weight: bold;
     color: chocolate;
-    font-size: 5px;
+    font-size: 10px;
   }
 
   .caja__precio-neto {}
