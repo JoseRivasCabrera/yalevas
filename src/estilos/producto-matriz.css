@@ -218,7 +218,7 @@
   }
 
   .caja-articulo {
-    width: 29%;
+    width: 45%;
     /* height: 230px; */
     cursor: pointer;
   }
@@ -232,7 +232,6 @@
   .contenido-articulo {
     display: flex;
     flex-direction: column;
-    gap: 4px;
   }
 
   .caja__de-categorias {
@@ -245,7 +244,7 @@
   }
 
   .nombre__de-categoria {
-    font-size: 6px;
+    font-size: 11px;
     color: gray;
   }
 
@@ -256,12 +255,12 @@
   }
 
   .numero-ventas {
-    font-size: 6px;
+    font-size: 9px;
     color: gray;
   }
 
   .nombre__de-articulo {
-    font-size: 10.5px;
+    font-size: 16px;
     font-weight: bold;
   }
 
@@ -276,7 +275,7 @@
   .precio-descuento {
     font-weight: bold;
     color: chocolate;
-    font-size: 10px;
+    font-size: 16px;
   }
 
   .caja__precio-neto {}
@@ -284,7 +283,7 @@
   .precio {
     text-decoration: line-through;
     color: gray;
-    font-size: 8px;
+    font-size: 11px;
   }
 
   .caja__numero-descuento {
@@ -293,7 +292,7 @@
 
   .descuento {
     color: chocolate;
-    font-size: 6px;
+    font-size: 8px;
   }
 
   .caja__de-id {
