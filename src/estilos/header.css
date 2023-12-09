@@ -76,7 +76,6 @@
     height: auto;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-around;
-    padding: 5px;
     background-image: url(../imagenes/img-paginas/banner.webp);
   }
 
