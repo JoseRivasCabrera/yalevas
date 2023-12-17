@@ -1,0 +1,22 @@
+{
+  "articulo": [
+    {
+      "nombreCategoria": "Mochila infantil",
+      "numbVentas": "2",
+      "nombre": "Bella mochila de sirena",
+      "precioDescuento": "13.560",
+      "precioNeto": "16.650",
+      "descuento": "15",
+      "id": "BYOS009"
+    },
+    {
+      "nombreCategoria": "Mochila infantil",
+      "numbVentas": "16",
+      "nombre": "Bella mochila de perro",
+      "precioDescuento": "18.500",
+      "precioNeto": "22.690",
+      "descuento": "5",
+      "id": "BYOS010"
+    }
+  ]
+}
