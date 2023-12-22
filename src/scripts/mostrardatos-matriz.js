@@ -50,18 +50,25 @@ const crearArticuloMatriz = (nombreCategoria, numbVentas, nombre, precioDescuent
   const cajaMatriz = document.getElementById('caja__articulos-matriz');
   
   const http = new XMLHttpRequest();
-  
-  http.open('GET', 'http://localhost:3000/articulo');
+
+  http.open('GET', 'https://joserivascabrera.github.io/apitest/db.json');
   
   http.send();
   
   http.onload = () => {
-    const data = JSON.parse(http.response);
-    data.forEach( articulo => {
-      const nuevoArticulo = crearArticuloMatriz(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
-      cajaMatriz.appendChild(nuevoArticulo);
-    });
-  };
+    try {
+      const responseData = JSON.parse(http.response);
+      const data = responseData.articulo;
+  
+      Array.from(data).forEach( articulo => {
+        const nuevoArticulo = crearArticuloMatriz(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
+        cajaMatriz.appendChild(nuevoArticulo);
+        
+      });
+    } catch (error) {
+    alert('Ocurrio un error al llamar el Json');
+  }
+};
 
 
 // const crearArticulo = () => {

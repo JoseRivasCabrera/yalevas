@@ -16,22 +16,29 @@ const crearArticuloIndex = (nombreCategoria, numbVentas, nombre, precioDescuento
        return articuloIndex;
   }
   
-  const cajaMatriz = document.getElementById('contenedor-articulos');
+  const contenedorArticulos = document.getElementById('contenedor-articulos');
   
   const http = new XMLHttpRequest();
   
-  http.open('GET', 'http://localhost:3000/articulo');
+  http.open('GET', 'https://joserivascabrera.github.io/apitest/db.json');
   
   http.send();
   
+  
   http.onload = () => {
-    const data = JSON.parse(http.response);
-    data.forEach( articulo => {
-      const nuevoArticulo = crearArticuloIndex(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
-      cajaMatriz.appendChild(nuevoArticulo);
-    });
-  };
-
+    try {
+      const responseData = JSON.parse(http.response);
+      const data = responseData.articulo;
+  
+      Array.from(data).forEach( articulo => {
+        const nuevoArticulo = crearArticuloIndex(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
+        contenedorArticulos.appendChild(nuevoArticulo);
+        
+      });
+    } catch (error) {
+    alert('Ocurrio un error al llamar el Json');
+  }
+};
 
 
 
