@@ -1,50 +1,8 @@
-/* .header-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
-  height: 5%;
-  align-items: center;
-  flex-direction: row;
-  background-image: url(../imagenes/img-paginas/banner2.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-} */
-
 .banner-superior {
   width: 100%;
   height: auto;
   position: absolute;
 }
-
-/* .img_logo {
-  width: 30%;
-  margin-left: 4%;
-  position: relative;
-} */
-
-/* .menu-superior {
-  display: flex;
-  justify-content: end;
-  align-self: end;
-  margin-bottom: 2%;
-  gap: 5%;
-} */
-
-/* .menu_superior-elemento {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: gray;
-} */
-
-/* .titulo-aniversario {
-  display: flex;
-  font-size: 2rem;
-  font-weight: bold;
-  justify-content: end;
-  margin-right: 7%;
-  color: chocolate;
-} */
 
 .banner-temporada {
   display: flex;
@@ -61,9 +19,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.contenedor-menu {
-  display: none;
-}
+
 
 
 /* ↓↓ TABLET ↓↓ */
@@ -84,31 +40,6 @@
     flex-direction: column;
     user-select: none;
   }
-
-  /* .header-container {
-    height: auto;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-around;
-    padding: 5px;
-    background-image: url(../imagenes/img-paginas/banner.webp);
-  } */
-
-  /* .img_logo {
-    width: 50%;
-    height: auto;
-  } */
-
-  /* .menu-superior {
-    display: none;
-  } */
-
-  /* .titulo-aniversario {
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    font-size: 2.5rem;
-    font-family: 'Roboto Condensed', sans-serif;
-  } */
 
   .banner-temporada {
     width: 100%;
@@ -132,42 +63,8 @@
     opacity: 70%;
   }
 
-  
-
   footer {
     padding-bottom: 85px
-  }
-
-  .contenedor-menu {
-    display: inline;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #f1f1f1;
-    box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  .menu-inferior {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .contenedor-icono {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: black;
-    font-family: 'Roboto Condensed', sans-serif;
-    gap: 5px;
-    text-decoration: none;
-  }
-
-  .icono-menu {
-    height: 30px;
   }
 
 }
@@ -190,31 +87,6 @@
     flex-direction: column;
     user-select: none;
   }
-
-  /* .header-container {
-    height: auto;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-around;
-    padding: 5px;
-    background-image: url(../imagenes/img-paginas/banner.webp);
-  }
-
-  .img_logo {
-    width: 50%;
-    height: auto;
-  }
-
-  .menu-superior {
-    display: none;
-  }
-
-  .titulo-aniversario {
-    display: flex;
-    align-items: center;
-    font-weight: 700;
-    font-size: 20px;
-    font-family: 'Roboto Condensed', sans-serif;
-  } */
 
   .banner-temporada {
     width: 100%;
@@ -240,38 +112,6 @@
 
   footer {
     padding-bottom: 85px
-  }
-
-  .contenedor-menu {
-    display: inline;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #f1f1f1;
-    box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  .menu-inferior {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .contenedor-icono {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: black;
-    font-family: 'Roboto Condensed', sans-serif;
-    gap: 5px;
-    text-decoration: none;
-  }
-
-  .icono-menu {
-    height: 30px;
   }
 
 }
