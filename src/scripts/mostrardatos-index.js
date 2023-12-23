@@ -14,7 +14,7 @@ const crearArticuloIndex = (nombreCategoria, numbVentas, nombre, precioDescuento
        </div>`
 
   articuloIndex.innerHTML = contenido;
-  articuloIndex.addEventListener('click', function() {
+  articuloIndex.addEventListener('click', function () {
     const idDelElemento = this.id;
     console.log("ID del elemento clickeado: " + idDelElemento);
   });
@@ -23,72 +23,83 @@ const crearArticuloIndex = (nombreCategoria, numbVentas, nombre, precioDescuento
 
 const contenedorArticulos = document.getElementById('contenedor-articulos');
 
-const http = new XMLHttpRequest();
+ {
+//   const http = new XMLHttpRequest();
 
-http.open('GET', 'http://localhost:3000/articulo');
-  
-http.send();
-  
-http.onload = () => {
-  try {
-    const data = JSON.parse(http.response);
-    data.forEach( articulo => {
-      const nuevoArticulo = crearArticuloIndex(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
-      contenedorArticulos.appendChild(nuevoArticulo);
-    })
-  } catch (error) {
-    alert('Ocurrio un error al traer los datos');
-  }
-};
+//   http.open('GET', 'http://localhost:3000/articulo');
+
+//   http.send();
+
+//   http.onload = () => {
+//     try {
+//       const data = JSON.parse(http.response);
+//       data.forEach( articulo => {
+//         const nuevoArticulo = crearArticuloIndex(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
+//         contenedorArticulos.appendChild(nuevoArticulo);
+//       })
+//     } catch (error) {
+//       alert('Ocurrio un error al traer los datos');
+//     }
+//   };
+ }
+
 
 
 {
-  // traer los datos de github
+  //  traer los datos de github
+  const http = new XMLHttpRequest();
 
-  // // const http = new XMLHttpRequest();
-  
-  // // http.open("GET", "http://localhost:3000/articulo");
-  
-  // // http.send();
-  
-  // // http.onload = () => {
-  // //   const data = JSON.parse(http.response);
-  // //   data.forEach((articulo) => {
-  // //     const nuevoArticulo = crearArticuloIndex(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
-  // //     contenedorArticulos.appendChild(nuevoArticulo);
-  // //   });
+  http.open('GET', 'https://joserivascabrera.github.io/apitest/db.json');
+
+  http.send();
+
+  http.onload = () => {
+    try {
+      const responseData = JSON.parse(http.response);
+      console.log('JSON Response:', responseData);
+      const data = responseData.articulo;
+      console.log('JSON Response:', data);
+      Array.from(data).forEach(articulo => {
+        const nuevoArticulo = crearArticuloIndex(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
+        contenedorArticulos.appendChild(nuevoArticulo);
+      });
+    } catch (error) {
+      console.error('Error al procesar el JSON:', error);
+      alert('Ocurrio un error al traer los datos');
+    }
+  };
+
 }
-  
 
 {
-// const insertar = () => {
-//     const contenedorArticulos = document.getElementById('contenedor-articulos');
-  
-//     contenedorArticulos.innerHTML = '';
-  
-//     const boxArticulo = `<a class="caja-articulo" href="#">
-//   <div class="caja_imagen-articulo" id="caja_imagen-articulo">
-//     <img class="imagen-articulo" id="imagen-articulo" src="src/imagenes/img-articulos/mochila.jpg"  alt="imagen de producto">
-//   </div>
-  
-//   <div class="descripciones">
-//     <p class="nombre-txt" >Bella mochila infantil</p>
-//     <p class="no-vendidos">16 Vendidos recientemente</p>
-//     <p class="precio-txt">¢16.955</p>
-//   </div>
-  
-//   </a>`
-  
-//     var numeroDeElementos = 10;
-  
-//     let cantidadElementos = '';
-  
-//     for (let i = 0; i < numeroDeElementos; i++) {
-//       cantidadElementos += boxArticulo;
-//     };
-  
-//     contenedorArticulos.innerHTML = cantidadElementos;
-//   }
-  
-//   insertar();
+  // const insertar = () => {
+  //     const contenedorArticulos = document.getElementById('contenedor-articulos');
+
+  //     contenedorArticulos.innerHTML = '';
+
+  //     const boxArticulo = `<a class="caja-articulo" href="#">
+  //   <div class="caja_imagen-articulo" id="caja_imagen-articulo">
+  //     <img class="imagen-articulo" id="imagen-articulo" src="src/imagenes/img-articulos/mochila.jpg"  alt="imagen de producto">
+  //   </div>
+
+  //   <div class="descripciones">
+  //     <p class="nombre-txt" >Bella mochila infantil</p>
+  //     <p class="no-vendidos">16 Vendidos recientemente</p>
+  //     <p class="precio-txt">¢16.955</p>
+  //   </div>
+
+  //   </a>`
+
+  //     var numeroDeElementos = 10;
+
+  //     let cantidadElementos = '';
+
+  //     for (let i = 0; i < numeroDeElementos; i++) {
+  //       cantidadElementos += boxArticulo;
+  //     };
+
+  //     contenedorArticulos.innerHTML = cantidadElementos;
+  //   }
+
+  //   insertar();
 }

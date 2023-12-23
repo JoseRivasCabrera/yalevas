@@ -44,7 +44,7 @@ const crearArticuloMatriz = (nombreCategoria, numbVentas, nombre, precioDescuent
         <h3 class="id">${"ID:" + id}</h3>
       </div>`
   cajaArticulo.innerHTML = contenido;
-  cajaArticulo.addEventListener('click', function() {
+  cajaArticulo.addEventListener('click', function () {
     const idDelElemento = this.id;
     console.log("ID del elemento clickeado: " + idDelElemento);
   });
@@ -55,47 +55,53 @@ const crearArticuloMatriz = (nombreCategoria, numbVentas, nombre, precioDescuent
 
 const cajaMatriz = document.getElementById('caja__articulos-matriz');
 
-const http = new XMLHttpRequest();
+{
+  //Traer datos del local host
 
-http.open('GET', 'http://localhost:3000/articulo');
-  
-http.send();
-  
-http.onload = () => {
-  try {
-    const data = JSON.parse(http.response);
-    data.forEach( articulo => {
-      const nuevoArticulo = crearArticuloMatriz(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
-      cajaMatriz.appendChild(nuevoArticulo);
-    })
-  } catch (error) {
-    alert('Ocurrio un error al traer los datos');
-  }
-};
-
-
-
-// { llamar al JSON de github
   // const http = new XMLHttpRequest();
 
-  // http.open('GET', 'https://joserivascabrera.github.io/apitest/db.json');
-  
+  // http.open('GET', 'http://localhost:3000/articulo');
+
   // http.send();
-  
+
   // http.onload = () => {
   //   try {
-  //     const responseData = JSON.parse(http.response);
-  //     console.log('JSON Response:', responseData);
-  //     const data = responseData.articulo;
-  //     console.log('JSON Response:', data);
-  //     Array.from(data).forEach(articulo => {
+  //     const data = JSON.parse(http.response);
+  //     data.forEach( articulo => {
   //       const nuevoArticulo = crearArticuloMatriz(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
   //       cajaMatriz.appendChild(nuevoArticulo);
-  //     });
+  //     })
   //   } catch (error) {
-  //     console.error('Error al procesar el JSON:', error);
   //     alert('Ocurrio un error al traer los datos');
   //   }
   // };
-  
-// }
+}
+
+
+
+
+{
+  //Traer datos de github
+
+   const http = new XMLHttpRequest();
+
+   http.open('GET', 'https://joserivascabrera.github.io/apitest/db.json');
+
+   http.send();
+
+   http.onload = () => {
+     try {
+       const responseData = JSON.parse(http.response);
+       console.log('JSON Response:', responseData);
+       const data = responseData.articulo;
+       console.log('JSON Response:', data);
+       Array.from(data).forEach(articulo => {
+         const nuevoArticulo = crearArticuloMatriz(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
+         cajaMatriz.appendChild(nuevoArticulo);
+       });
+     } catch (error) {
+       console.error('Error al procesar el JSON:', error);
+       alert('Ocurrio un error al traer los datos');
+     }
+   };
+}
