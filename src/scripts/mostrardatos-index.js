@@ -14,60 +14,89 @@ const crearArticuloIndex = (nombreCategoria, numbVentas, nombre, precioDescuento
        </div>`
 
   articuloIndex.innerHTML = contenido;
-  articuloIndex.addEventListener('click', function () {
-    const idDelElemento = this.id;
-    console.log("ID del elemento clickeado: " + idDelElemento);
+  articuloIndex.addEventListener('click', () => {
+    const idDelElemento = articuloIndex.id;
+    cargarProducto(idDelElemento);
   });
+
   return articuloIndex;
 }
 
 const contenedorArticulos = document.getElementById('contenedor-articulos');
 
- {
-//   const http = new XMLHttpRequest();
+{
+  // const http = new XMLHttpRequest();
 
-//   http.open('GET', 'http://localhost:3000/articulo');
+  // http.open('GET', 'http://localhost:3000/articulo');
 
-//   http.send();
+  // http.send();
 
-//   http.onload = () => {
-//     try {
-//       const data = JSON.parse(http.response);
-//       data.forEach( articulo => {
-//         const nuevoArticulo = crearArticuloIndex(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
-//         contenedorArticulos.appendChild(nuevoArticulo);
-//       })
-//     } catch (error) {
-//       alert('Ocurrio un error al traer los datos');
-//     }
-//   };
- }
+  // http.onload = () => {
+  //   try {
+  //     const data = JSON.parse(http.response);
+  //     data.forEach(articulo => {
+  //       const nuevoArticulo = crearArticuloIndex(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
+  //       contenedorArticulos.appendChild(nuevoArticulo);
+  //     })
+  //   } catch (error) {
+  //     alert('Ocurrio un error al traer los datos');
+  //   }
+  // };
+}
 
+const cargarProducto = (id) => {
+  fetch('db.json')
+    .then(response => response.json())
+    .then(data => {
+      
+        let encontrado = false;
+
+        for (var i = 0; i < data.articulo.length; i++) {
+            if (data.articulo[i].id === id) {
+                encontrado = true;
+                break;
+            }
+        }
+
+        if (encontrado) {
+            console.log("El ID está presente en el JSON.");
+            console.log("ID del elemento clickeado: " + id);
+            window.location.href = 'producto.html';
+            localStorage.setItem('productoID', id);
+            
+        } else {
+            console.log("El ID no está presente en el JSON.");
+         
+        }
+    })
+    .catch(error => console.error('Error al cargar el JSON:', error));
+    
+};
 
 
 {
   //  traer los datos de github
-  const http = new XMLHttpRequest();
+   const http = new XMLHttpRequest();
 
-  http.open('GET', 'https://joserivascabrera.github.io/apitest/db.json');
+   http.open('GET', 'https://joserivascabrera.github.io/apitest/db.json');
 
-  http.send();
+   http.send();
 
-  http.onload = () => {
-    try {
-      const responseData = JSON.parse(http.response);
-      console.log('JSON Response:', responseData);
-      const data = responseData.articulo;
-      console.log('JSON Response:', data);
-      Array.from(data).forEach(articulo => {
-        const nuevoArticulo = crearArticuloIndex(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
-        contenedorArticulos.appendChild(nuevoArticulo);
-      });
-    } catch (error) {
-      console.error('Error al procesar el JSON:', error);
-      alert('Ocurrio un error al traer los datos');
-    }
-  };
+   http.onload = () => {
+     try {
+       const responseData = JSON.parse(http.response);
+       console.log('JSON Response:', responseData);
+       const data = responseData.articulo;
+       console.log('JSON Response:', data);
+       Array.from(data).forEach(articulo => {
+         const nuevoArticulo = crearArticuloIndex(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
+         contenedorArticulos.appendChild(nuevoArticulo);
+       });
+     } catch (error) {
+       console.error('Error al procesar el JSON:', error);
+       alert('Ocurrio un error al traer los datos');
+     }
+   };
 
 }
 

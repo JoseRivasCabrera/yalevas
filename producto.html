@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/estilos/reset.css">
   <link rel="stylesheet" href="src/estilos/header.css">
-  <link rel="stylesheet" href="src/estilos/menu.css">
+  <link rel="stylesheet" href="src/estilos/producto.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +25,9 @@
 
   <header class="header-container">
 
-    <img src="src/imagenes/img-paginas/YALEVAS-STORE-KIDS.webp" alt="LOGO" class="img_logo">
+    <a href="index.html">
+      <img src="src/imagenes/img-paginas/YALEVAS-STORE-KIDS.webp" alt="LOGO" class="img_logo">
+    </a>
 
 
     <nav class="menu-superior">
@@ -42,46 +45,82 @@
 
     <h1 class="titulo-aniversario">3° ANIVERSARIO</h1>
   </header>
-  
+
   <main>
+
+    <section id="caja__producto">
+
+      <div class="encabezado__de--articulo">
+
+        <a href="index.html" class='bx bx-chevron-left flecha__retornar'></a>
+
+
+        <div class="elemenos__de--encabezado">
+
+          <div class="caja__nombre--producto">
+            <h3 class="nombre__del--producto">Bella mochila de Sirena</h3>
+          </div>
+
+          <div class="estrellas__de--calificacion">
+            <i class='bx bxs-star' style='color:#feca05'></i>
+            <i class='bx bxs-star' style='color:#feca05'></i>
+            <i class='bx bxs-star' style='color:#feca05'></i>
+            <i class='bx bxs-star' style='color:#feca05'></i>
+            <i class='bx bx-star' style='color:#feca05'></i>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="contenedor__de--imagenes">
+
+        <div class="imagenes--primarias">
+          <img class="imagen--primaria"
+            src="https://img.ltwebstatic.com/images3_spmp/2023/06/28/1687953267cd2e7e553485d8dd40d08666208988f3_thumbnail_600x.webp"
+            alt="">
+        </div>
+
+        <div class="imagenes--secundarias">
+          <img class="imagen--secundaria"
+            src="https://img.ltwebstatic.com/images3_spmp/2023/06/28/1687953266a5e5918669f9eddc8f42d694b70dc423_thumbnail_600x.webp"
+            alt="">
+          <img class="imagen--secundaria"
+            src="https://img.ltwebstatic.com/images3_spmp/2023/06/28/1687953266968e796465e9f4f7c2c4591fc23dcfb7_thumbnail_600x.webp"
+            alt="">
+          <img class="imagen--secundaria"
+            src="https://img.ltwebstatic.com/images3_spmp/2023/06/28/168795326662e7e138f21db16bb31473b9c2008fab_thumbnail_600x.webp"
+            alt="">
+        </div>
+
+      </div>
+
+      <div class="precios">
+        <h3 class="precio__con-descuento">¢16.500</h3>
+        <h3 class="precio__sin--descuento">¢19.605</h3>
+      </div>
+
+      <div class="descripciones">
+      <p class="descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse eveniet ex ea fugit ab quisquam magnam, ratione hic optio saepe.
+      </p>
+      </div>
+
+    </section>
+
+   
 
   </main>
 
   <footer>
-    <section class="contenedor-menu">
-
-      <div class="menu-inferior">
-
-        <a href="index.html" class="contenedor-icono">
-          <img src="src/imagenes/iconos/icono-home.svg" alt="HOME" class="icono-menu">
-          <p class="texto-menu">Inicio</p>
-        </a>
-
-        <a href="#" class="contenedor-icono">
-          <img src="src/imagenes/iconos/icono-maps.svg" alt="MAPS" class="icono-menu">
-          <p class="texto-menu">Ubicación</p>
-        </a>
-
-        <a href="https://tinyurl.com/Contacto-yalevas-movil" class="contenedor-icono">
-          <img src="src/imagenes/iconos/icono-whatsapp.svg" alt="WHATSAPP" class="icono-menu">
-          <p class="texto-menu">Contacto</p>
-        </a>
-
-        <a href="#" class="contenedor-icono">
-          <img src="src/imagenes/iconos/bx-group.svg" alt="GRUPO" class="icono-menu">
-          <p class="texto-menu">Grupo</p>
-        </a>
-
-        <a href="matriz.html" class="contenedor-icono">
-          <img src="src/imagenes/iconos/icono-nosotros.svg" alt="INFO" class="icono-menu">
-          <p class="texto-menu">Nosotros</p>
-        </a>
-
-      </div>
-    </section>
+    <div class="btn__encargar">
+      <a href="https://tinyurl.com/Contacto-yalevas-movil" class="boton__hacer--encargo">
+        <p class="txt__btn--encargar">Encargar</p>
+      </a>
+    </div>
   </footer>
 
-
+  <!-- <script src="./src/scripts/mostrardatos-index.js"></script> -->
+  <script src="./src/scripts/datosarticulos.js"></script>
 </body>
 
 </html>
