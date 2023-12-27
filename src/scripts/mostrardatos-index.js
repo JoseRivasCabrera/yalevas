@@ -4,7 +4,7 @@ const crearArticuloIndex = (nombreCategoria, imagen1, numbVentas, nombre, precio
   articuloIndex.id = id;
   articuloIndex.classList.add('caja-articulo')
   const contenido = `<div class="caja_imagen-articulo" id="caja_imagen-articulo">
-        <img class="imagen-articulo" id="imagen-articulo" src="${imagen1}"  alt="imagen de producto">
+        <img class="imagen-articulo" id="imagen-articulo" src="${articulo.imagen1}"  alt="imagen de producto">
        </div>
       
        <div class="descripciones">
