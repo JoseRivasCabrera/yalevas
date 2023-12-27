@@ -1,13 +1,16 @@
 {
   "articulo": [
     {
-      "nombreCategoria": "Mochila infantil",
-      "numbVentas": "99",
-      "nombre": "Bella mochila de sirena",
+      "id": "BYOS009",
+      "nombre": "Bella mochila de Buho",
+      "numbVentas": "3",
+      "precioNeto": "22.260",
       "precioDescuento": "11.560",
-      "precioNeto": "19.650",
-      "descuento": "15",
-      "id": "BYOS009"
+      "imagen1": "https://img.ltwebstatic.com/images3_pi/2023/03/24/1679639265a087cc37997dc41fd13fdca30655ffa0_thumbnail_600x.webp",
+      "imagen2": "https://img.ltwebstatic.com/images3_pi/2023/03/24/1679639268ff2a67a6411c07e034ea82c1dee07173_thumbnail_600x.webp",
+      "imagen3": "https://img.ltwebstatic.com/images3_pi/2023/03/24/1679639267c334db091d2ed53c3ea1452f1602047f_thumbnail_600x.webp",
+      "imagen4": "https://img.ltwebstatic.com/images3_pi/2023/03/24/167963927054915cb440606268298f6d2155b5a13b_thumbnail_600x.webp",
+      "descripcion": "2 piezas Mochila de niños con dibujos animados reno patrón con multi bolsillo. Color rosa, material 100% poliéster"
     },
     {
       "nombreCategoria": "Mochila infantil",
