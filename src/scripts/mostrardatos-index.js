@@ -1,10 +1,10 @@
-const crearArticuloIndex = (nombreCategoria, numbVentas, nombre, precioDescuento, precioNeto, descuento, id) => {
+const crearArticuloIndex = (nombreCategoria, imagen1, numbVentas, nombre, precioDescuento, precioNeto, descuento, id) => {
   const articuloIndex = document.createElement('a');
   articuloIndex.href = '#';
   articuloIndex.id = id;
   articuloIndex.classList.add('caja-articulo')
   const contenido = `<div class="caja_imagen-articulo" id="caja_imagen-articulo">
-        <img class="imagen-articulo" id="imagen-articulo" src="src/imagenes/img-articulos/mochila.jpg"  alt="imagen de producto">
+        <img class="imagen-articulo" id="imagen-articulo" src="${imagen1}"  alt="imagen de producto">
        </div>
       
        <div class="descripciones">
