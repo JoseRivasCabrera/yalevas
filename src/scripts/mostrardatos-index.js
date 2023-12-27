@@ -89,7 +89,7 @@ const cargarProducto = (id) => {
        const data = responseData.articulo;
        console.log('JSON Response:', data);
        Array.from(data).forEach(articulo => {
-         const nuevoArticulo = crearArticuloIndex(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id);
+         const nuevoArticulo = crearArticuloIndex(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id, articulo.imagen1, articulo.imagen2, articulo.imagen3, articulo.imagen4, articulo.descripcion);
          contenedorArticulos.appendChild(nuevoArticulo);
        });
      } catch (error) {

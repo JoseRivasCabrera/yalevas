@@ -16,17 +16,67 @@ function cargarDetallesProducto(id) {
     .then(response => response.json())
     .then(data => {
       // Buscar el producto con el ID correspondiente
-      var productoEncontrado = data.articulo.find(producto => producto.id === id);
+      let productoEncontrado = data.articulo.find(producto => producto.id === id);
 
       if (productoEncontrado) {
         console.log("Detalles del producto encontrado:", productoEncontrado);
+        const boxProducto = document.getElementById('caja__producto');
+        const contenidoarticulo = `<div class="encabezado__de--articulo">
 
-        // Puedes utilizar los detalles del producto como necesites en esta página
+        <a href="index.html" class='bx bx-chevron-left flecha__retornar'></a>
 
-        // Ejemplo: Mostrar el nombre del producto en un elemento HTML con id="nombreProducto"
-        document.getElementById('caja__producto').innerText = productoEncontrado.nombre;
 
-        // Otros elementos del producto pueden manejarse de manera similar
+        <div class="elemenos__de--encabezado">
+
+          <div class="caja__nombre--producto">
+            <h3 class="nombre__del--producto">"${productoEncontrado.nombre}"</h3>
+          </div>
+
+          <div class="estrellas__de--calificacion">
+            <i class='bx bxs-star' style='color:#feca05'></i>
+            <i class='bx bxs-star' style='color:#feca05'></i>
+            <i class='bx bxs-star' style='color:#feca05'></i>
+            <i class='bx bxs-star' style='color:#feca05'></i>
+            <i class='bx bx-star' style='color:#feca05'></i>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="contenedor__de--imagenes">
+
+        <div class="imagenes--primarias">
+          <img class="imagen--primaria"
+            src="${productoEncontrado.imagen1}"
+            alt="">
+        </div>
+
+        <div class="imagenes--secundarias">
+          <img class="imagen--secundaria"
+            src="${productoEncontrado.imagen2}"
+            alt="">
+          <img class="imagen--secundaria"
+            src="${productoEncontrado.imagen3}"
+            alt="">
+          <img class="imagen--secundaria"
+            src="${productoEncontrado.imagen4}"
+            alt="">
+        </div>
+
+      </div>
+
+      <div class="precios">
+        <h3 class="precio__con-descuento">¢16.500</h3>
+        <h3 class="precio__sin--descuento">${productoEncontrado.precioNeto}"</h3>
+      </div>
+
+      <div class="descripciones">
+      <p class="descripcion">${productoEncontrado.descripcion}</p>
+      </div>`
+
+      boxProducto.innerHTML = contenidoarticulo;
+
 
       } else {
         console.log("No se encontró un producto con el ID proporcionado.");
