@@ -29,7 +29,7 @@ function cargarDetallesProducto(id) {
         <div class="elemenos__de--encabezado">
 
           <div class="caja__nombre--producto">
-            <h3 class="nombre__del--producto">"${productoEncontrado.nombre}"</h3>
+            <h3 class="nombre__del--producto">${productoEncontrado.nombre}</h3>
           </div>
 
           <div class="estrellas__de--calificacion">
