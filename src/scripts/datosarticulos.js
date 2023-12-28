@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const productoID = localStorage.getItem('productoID');
 
   if (productoID) {
-    console.log("ID del producto en la página 'producto.html': " + productoID);
+    
 
     cargarDetallesProducto(productoID);
   } else {
-    console.log("No se encontró un ID en el localStorage.");
+    alert("No se encontró un Producto.");
   }
 });
 
@@ -19,7 +19,7 @@ function cargarDetallesProducto(id) {
       let productoEncontrado = data.articulo.find(producto => producto.id === id);
 
       if (productoEncontrado) {
-        console.log("Detalles del producto encontrado:", productoEncontrado);
+      
         const boxProducto = document.getElementById('caja__producto');
         const contenidoarticulo = `<div class="encabezado__de--articulo">
 
@@ -79,7 +79,7 @@ function cargarDetallesProducto(id) {
 
 
       } else {
-        console.log("No se encontró un producto con el ID proporcionado.");
+        alert("No se encontró un producto con el ID proporcionado.");
       }
     }).catch(error => console.error('Error al cargar el JSON:', error));
   }

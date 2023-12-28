@@ -1,4 +1,4 @@
-const crearArticuloIndex = (nombreCategoria, imagen1, numbVentas, nombre, precioDescuento, precioNeto, descuento, id) => {
+const crearArticuloIndex = (imagen1, nombre, numbVentas, id, precioNeto) => {
   const articuloIndex = document.createElement('a');
   articuloIndex.href = '#';
   articuloIndex.id = id;
@@ -14,6 +14,7 @@ const crearArticuloIndex = (nombreCategoria, imagen1, numbVentas, nombre, precio
        </div>`
 
   articuloIndex.innerHTML = contenido;
+  
   articuloIndex.addEventListener('click', () => {
     const idDelElemento = articuloIndex.id;
     cargarProducto(idDelElemento);
@@ -59,13 +60,12 @@ const cargarProducto = (id) => {
         }
 
         if (encontrado) {
-            console.log("El ID está presente en el JSON.");
-            console.log("ID del elemento clickeado: " + id);
+            
             window.location.href = 'producto.html';
             localStorage.setItem('productoID', id);
             
         } else {
-            console.log("El ID no está presente en el JSON.");
+            alert("El ID no está presente en el JSON." + id);
          
         }
     })
@@ -85,11 +85,11 @@ const cargarProducto = (id) => {
    http.onload = () => {
      try {
        const responseData = JSON.parse(http.response);
-       console.log('JSON Response:', responseData);
+       
        const data = responseData.articulo;
-       console.log('JSON Response:', data);
+       
        Array.from(data).forEach(articulo => {
-         const nuevoArticulo = crearArticuloIndex(articulo.nombreCategoria, articulo.numbVentas, articulo.nombre, articulo.precioDescuento, articulo.precioNeto, articulo.descuento, articulo.id, articulo.imagen1, articulo.imagen2, articulo.imagen3, articulo.imagen4, articulo.descripcion);
+         const nuevoArticulo = crearArticuloIndex(articulo.imagen1, articulo.nombre, articulo.numbVentas,  articulo.id, articulo.precioNeto, articulo.imagen2, articulo.imagen3, articulo.imagen4, articulo.descripcion,  articulo.precioDescuento,);
          contenedorArticulos.appendChild(nuevoArticulo);
        });
      } catch (error) {

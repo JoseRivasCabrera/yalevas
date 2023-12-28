@@ -1,7 +1,7 @@
 {
   "articulo": [
     {
-      "id": "BYOS009",
+      "id": "BYOS001",
       "nombre": "Bella mochila de Buho",
       "numbVentas": "3",
       "precioNeto": "22.260",
@@ -13,16 +13,18 @@
       "descripcion": "2 piezas Mochila de niños con dibujos animados reno patrón con multi bolsillo. Color rosa, material 100% poliéster"
     },
     {
-      "nombreCategoria": "Mochila infantil",
+      "id": "BYOS002",
+      "nombre": "Mochila De Dinosaurios",
       "numbVentas": "6",
-      "nombre": "Bella mochila de perro",
-      "precioDescuento": "18.500",
-      "precioNeto": "22.690",
-      "descuento": "5",
-      "id": "BYOS010"
+      "precioNeto": "14.410",
+      "imagen1": "https://img.ltwebstatic.com/images3_spmp/2023/12/03/3e/170159254953eb3221cd7fba8297ebe2c4523975d3_thumbnail_600x.webp",
+      "imagen2": "https://img.ltwebstatic.com/images3_spmp/2023/12/03/3e/1701592549f3d6ee92a7217f61308bb9da56422067_thumbnail_600x.webp",
+      "imagen3": "https://img.ltwebstatic.com/images3_spmp/2023/12/03/3e/170159254929a3d2c42c655bb0690e7d70a2c5bc44_thumbnail_600x.webp",
+      "imagen4": "https://img.ltwebstatic.com/images3_spmp/2023/12/03/c9/17015925504f1f8d597e6ec3a1cedbc4eb5551c213_thumbnail_600x.webp",
+      "descripcion": "Mochila Infantil Con Lindo Patrón De Dibujos Animados De Dinosaurios Para Niños De 3 A 7 Años"
     },
     {
-      "id": "BYOS001",
+      "id": "BYOS003",
       "nombre": "Bella mochila de dinosaurio bebe",
       "numbVentas": "6",
       "precioNeto": "22.690",
@@ -31,6 +33,28 @@
       "imagen3": "https://img.ltwebstatic.com/images3_spmp/2023/06/28/1687953266968e796465e9f4f7c2c4591fc23dcfb7_thumbnail_600x.webp",
       "imagen4": "https://img.ltwebstatic.com/images3_spmp/2023/06/28/168795326662e7e138f21db16bb31473b9c2008fab_thumbnail_600x.webp",
       "descripcion": "Realmente satisfecha me encanto la volveria a pedir la recomiendo bien prodicto estoy mas que satisfecha encantada con este producto"
+    },
+    {
+      "id": "BYOS004",
+      "nombre": "Mochila de gatita",
+      "numbVentas": "9",
+      "precioNeto": "11.770",
+      "imagen1": "https://img.ltwebstatic.com/images3_spmp/2023/06/01/168558478615b543dad08b2a5835baa4fb1282a3ba_thumbnail_600x.webp",
+      "imagen2": "https://img.ltwebstatic.com/images3_spmp/2023/06/01/168558482515ad6a00f323d1a6677c278c37b6dc83_thumbnail_600x.webp",
+      "imagen3": "https://img.ltwebstatic.com/images3_spmp/2023/06/01/1685584824a32ecbd70875a0ac8b2b3c34053b2655_thumbnail_600x.webp",
+      "imagen4": "https://img.ltwebstatic.com/images3_spmp/2023/06/01/168558482579963440915b75b3f786208d37bbb7b5_thumbnail_600x.webp",
+      "descripcion": "Hermosa mochila impermeable con diseño de gatita, color rosa, 100% poliéster"
+    },
+    {
+      "id": "BYOS005",
+      "nombre": "",
+      "numbVentas": "",
+      "precioNeto": "",
+      "imagen1": "",
+      "imagen2": "",
+      "imagen3": "",
+      "imagen4": "",
+      "descripcion": ""
     }
   ]
 }
