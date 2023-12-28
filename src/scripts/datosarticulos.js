@@ -21,6 +21,7 @@ function cargarDetallesProducto(id) {
       if (productoEncontrado) {
       
         const boxProducto = document.getElementById('caja__producto');
+      
         const contenidoarticulo = `<div class="encabezado__de--articulo">
 
         <a href="index.html" class='bx bx-chevron-left flecha__retornar'></a>
@@ -67,8 +68,8 @@ function cargarDetallesProducto(id) {
       </div>
 
       <div class="precios">
-        <h3 class="precio__con-descuento">¢16.500</h3>
-        <h3 class="precio__sin--descuento">${productoEncontrado.precioNeto}"</h3>
+        <h3 class="precio__con-descuento">${'¢' + productoEncontrado.precioNeto}</h3>
+        <h3 class="precio__sin--descuento">${'¢' + productoEncontrado.precioDescuento}</h3>
       </div>
 
       <div class="descripciones">

@@ -1,4 +1,4 @@
-const crearArticuloIndex = (imagen1, nombre, numbVentas, id, precioNeto) => {
+const crearArticuloIndex = (imagen1, nombre, numbVentas, id, precioNeto, precioDescuento) => {
   const articuloIndex = document.createElement('a');
   articuloIndex.href = '#';
   articuloIndex.id = id;
@@ -89,7 +89,7 @@ const cargarProducto = (id) => {
        const data = responseData.articulo;
        
        Array.from(data).forEach(articulo => {
-         const nuevoArticulo = crearArticuloIndex(articulo.imagen1, articulo.nombre, articulo.numbVentas,  articulo.id, articulo.precioNeto, articulo.imagen2, articulo.imagen3, articulo.imagen4, articulo.descripcion,  articulo.precioDescuento,);
+         const nuevoArticulo = crearArticuloIndex(articulo.imagen1, articulo.nombre, articulo.numbVentas,  articulo.id, articulo.precioNeto, articulo.imagen2, articulo.imagen3, articulo.imagen4, articulo.descripcion,  articulo.precioDescuento);
          contenedorArticulos.appendChild(nuevoArticulo);
        });
      } catch (error) {
