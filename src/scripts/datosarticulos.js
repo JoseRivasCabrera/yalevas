@@ -40,6 +40,7 @@ function cargarDetallesProducto(id) {
             <i class='bx bx-star' style='color:#feca05'></i>
           </div>
 
+          
         </div>
 
       </div>
@@ -50,7 +51,6 @@ function cargarDetallesProducto(id) {
           <img class="imagen--primaria" 
             src="${productoEncontrado.imagen1}"
             alt="">
-            <p class="Id-producto">ID ${productoEncontrado.id}</p>
         </a>
 
         <div class="imagenes--secundarias">
@@ -77,6 +77,7 @@ function cargarDetallesProducto(id) {
       <div class="precios">
         <h3 class="precio__con-descuento">${'¢' + productoEncontrado.precioNeto}</h3>
         <h3 class="precio__sin--descuento">${'¢' + productoEncontrado.precioDescuento}</h3>
+        <p class="Id-producto">ID:${productoEncontrado.id}</p>
       </div>
 
       <div class="descripciones">
@@ -105,7 +106,7 @@ const cambiarImagenes = () => {
   <img class="imagen--primaria"
     src="${srcImagen}"
     alt="">
-    <p class="Id-producto">ID ${productoID}</p>
+   
   </a>`;
 
   espacioImagen1.innerHTML = cambioImg;

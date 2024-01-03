@@ -13,6 +13,7 @@
     font-size: 20px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
+    align-items: center;
   }
 
   .flecha__retornar {
@@ -32,17 +33,22 @@
 
   .imagen--primaria {
     max-width: 100%;
-   
   }
 
   .Id-producto {
-    margin-top: -15px;
+    margin-top: 2%;
+    margin-left: 17%;
     display: inline-block;
-    padding: 5px;
+    padding: 6px;
     border: 1px solid black;
     border-radius: 10px;
-    font-size: 1.3rem;
-    background-color: lightgray
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: lightgray;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    width: 33%;
+    text-align: center;
   }
 
   .imagenes--secundarias {
@@ -60,7 +66,7 @@
     font-family: 'Fraunces', serif;
     display: flex;
     align-items: end;
-    padding: 2% 5%;
+    padding: 0 5%  2% 5%;
     gap: 10px;
   }
 
