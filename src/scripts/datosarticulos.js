@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
- 
+
   const productoID = localStorage.getItem('productoID');
 
   if (productoID) {
-    
-
     cargarDetallesProducto(productoID);
+    
   } else {
     alert("No se encontró un Producto.");
   }
@@ -15,13 +14,13 @@ function cargarDetallesProducto(id) {
   fetch('https://joserivascabrera.github.io/apitest/db.json')
     .then(response => response.json())
     .then(data => {
-      // Buscar el producto con el ID correspondiente
+
       let productoEncontrado = data.articulo.find(producto => producto.id === id);
 
       if (productoEncontrado) {
-      
+
         const boxProducto = document.getElementById('caja__producto');
-      
+
         const contenidoarticulo = `<div class="encabezado__de--articulo">
 
         <a href="index.html" class='bx bx-chevron-left flecha__retornar'></a>
@@ -47,22 +46,29 @@ function cargarDetallesProducto(id) {
 
       <div class="contenedor__de--imagenes">
 
-        <div class="imagenes--primarias">
-          <img class="imagen--primaria"
+        <a class="imagenes--primarias" id="IMG1"">
+          <img class="imagen--primaria" 
             src="${productoEncontrado.imagen1}"
             alt="">
-        </div>
+        </a>
 
         <div class="imagenes--secundarias">
-          <img class="imagen--secundaria"
+        <a onclick="cambiarImagenes()">
+          <img class="imagen--secundaria" id="IMG2"
             src="${productoEncontrado.imagen2}"
             alt="">
-          <img class="imagen--secundaria"
+        </a>
+        <a onclick="cambiarImagenes()">
+          <img class="imagen--secundaria" id="IMG3"
             src="${productoEncontrado.imagen3}"
             alt="">
-          <img class="imagen--secundaria"
+        </a>
+        <a onclick="cambiarImagenes()">
+          <img class="imagen--secundaria" id="IMG4"
             src="${productoEncontrado.imagen4}"
             alt="">
+        </a>
+          
         </div>
 
       </div>
@@ -76,13 +82,29 @@ function cargarDetallesProducto(id) {
       <p class="descripcion">${productoEncontrado.descripcion}</p>
       </div>`
 
-      boxProducto.innerHTML = contenidoarticulo;
+        boxProducto.innerHTML = contenidoarticulo;
 
 
       } else {
         alert("No se encontró un producto con el ID proporcionado.");
       }
     }).catch(error => console.error('Error al cargar el JSON:', error));
-  }
+}
 
-  // ya estoy obteniendo los datos segun el id que se selecciona en el index
+const cambiarImagenes = () => {
+
+  const ImagenSeleccionada = event.target;
+
+  const srcImagen = ImagenSeleccionada.src;
+
+  const espacioImagen1 = document.getElementById("IMG1");
+
+  const cambioImg = `<a class="imagenes--primarias" id="IMG1" >
+  <img class="imagen--primaria"
+    src="${srcImagen}"
+    alt="">
+  </a>`;
+
+  espacioImagen1.innerHTML = cambioImg;
+
+};
