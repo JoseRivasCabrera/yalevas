@@ -50,6 +50,7 @@ function cargarDetallesProducto(id) {
           <img class="imagen--primaria" 
             src="${productoEncontrado.imagen1}"
             alt="">
+            <p class="Id-producto">ID ${productoEncontrado.id}</p>
         </a>
 
         <div class="imagenes--secundarias">
@@ -94,6 +95,7 @@ function cargarDetallesProducto(id) {
 const cambiarImagenes = () => {
 
   const ImagenSeleccionada = event.target;
+  const productoID = localStorage.getItem('productoID');
 
   const srcImagen = ImagenSeleccionada.src;
 
@@ -103,6 +105,7 @@ const cambiarImagenes = () => {
   <img class="imagen--primaria"
     src="${srcImagen}"
     alt="">
+    <p class="Id-producto">ID ${productoID}</p>
   </a>`;
 
   espacioImagen1.innerHTML = cambioImg;
