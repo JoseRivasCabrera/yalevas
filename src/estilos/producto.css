@@ -14,7 +14,6 @@
   }
 
   .flecha__retornar {
-    /* font-size: 3rem; */
     font-weight: bold;
     text-decoration: none;
   }
@@ -137,6 +136,9 @@
 /* ↓↓ MOVIL ↓↓ */
 @media only screen and (min-width: 200px) and (max-width: 525px) {
 
+  .caja__producto {
+    height: 90vh;
+  }
 
   .encabezado__de--articulo {
     display: flex;
@@ -235,7 +237,7 @@
   .btn__encargar {
     background-color: #f1f1f1;
     width: 100%;
-    height: 15%;
+    height: 10%;
     position: fixed;
     bottom: 0;
     display: flex;
