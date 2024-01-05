@@ -9,7 +9,7 @@ const crearArticuloIndex = (imagen1, nombre, numbVentas, id, precioNeto, precioD
       
        <div class="descripciones">
          <p class="nombre-txt" >${nombre}</p>
-        <p class="no-vendidos">${numbVentas + " ventas"}</p>
+        <p class="no-vendidos">${numbVentas + " Vendidos"}</p>
          <p class="precio-txt">${"¢" + precioNeto}</p>
        </div>`
 
