@@ -182,15 +182,15 @@
     },
     {
       "id": "BYOS016",
-      "nombre": "Mochila de Dinosaurio",
-      "numbVentas": "4",
-      "precioNeto": "9.900",
-      "precioDescuento": "10.890",
-      "imagen1": "https://img.ltwebstatic.com/images3_spmp/2023/06/23/1687504114037eee017635395b6c4c75f9085a0ce8_thumbnail_600x.webp",
-      "imagen2": "https://img.ltwebstatic.com/images3_spmp/2023/06/23/1687504114578785c8627d962fa9bd4a28c027a996_thumbnail_600x.webp",
-      "imagen3": "https://img.ltwebstatic.com/images3_spmp/2023/06/23/1687504114fe88b032ae4def18b4bc633a5ab17bd8_thumbnail_600x.webp",
-      "imagen4": "https://img.ltwebstatic.com/images3_spmp/2023/06/23/1687504114f83a46628610a7f706571a833e349f91_thumbnail_600x.webp",
-      "descripcion": "Mochila diseño de dinosaurio ideal para niños de kinder impermeable 95% poliamida, 5% Poliéster"
+      "nombre": "Mochila de Conejito",
+      "numbVentas": "16",
+      "precioNeto": "11.660",
+      "precioDescuento": "12.826",
+      "imagen1": "https://img.ltwebstatic.com/images3_spmp/2023/06/05/16859545200abce1cfc532da8bf5f281d972dc3b48_thumbnail_600x.webp",
+      "imagen2": "https://img.ltwebstatic.com/images3_spmp/2023/06/05/1685954517a7330b484d3825118fb7dfac1b07164d_thumbnail_600x.webp",
+      "imagen3": "https://img.ltwebstatic.com/images3_spmp/2023/06/05/16859545213c06c7c6d0763cb9f44d046a9aa9c501_thumbnail_600x.webp",
+      "imagen4": "https://img.ltwebstatic.com/images3_spmp/2023/06/05/168595452178ad52f9faf2f2c6bf67046f1f1510b8_thumbnail_600x.webp",
+      "descripcion": "Mochila diseño de conejito ideal para niñas de kinder impermeable 100% Poliéster"
     },
     {
       "id": "BYOS017",
