@@ -136,9 +136,6 @@
 /* ↓↓ MOVIL ↓↓ */
 @media only screen and (min-width: 200px) and (max-width: 525px) {
 
-  .caja__producto {
-    height: 90vh;
-  }
 
   .encabezado__de--articulo {
     display: flex;

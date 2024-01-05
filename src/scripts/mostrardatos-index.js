@@ -54,7 +54,6 @@ const cargarProducto = (id) => {
 
         for (var i = 0; i < data.articulo.length; i++) {
             if (data.articulo[i].id.toString() === id.toString()) {
-              console.log('Producto encontrado:', data.articulo[i]);
                 encontrado = true;
                 break;
             }

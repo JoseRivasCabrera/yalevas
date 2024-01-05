@@ -101,7 +101,6 @@ function cargarDetallesProducto(id) {
 const cambiarImagenes = () => {
 
   const ImagenSeleccionada = event.target;
-  const productoID = localStorage.getItem('productoID');
 
   const srcImagen = ImagenSeleccionada.src;
 
