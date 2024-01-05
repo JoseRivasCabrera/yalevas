@@ -1,5 +1,138 @@
 /* ↓↓ TABLET ↓↓ */
-@media only screen and (min-width: 526px) and (max-width: 1024px) {}
+@media only screen and (min-width: 526px) and (max-width: 1024px) {
+  
+  
+  .encabezado__de--articulo {
+    display: flex;
+    background-color: white;
+    height: 8vh;
+    margin-top: 3%;
+    font-size: 2.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    align-items: center;
+  }
+
+  .flecha__retornar {
+    /* font-size: 3rem; */
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .contenedor__de--imagenes {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    max-height: 45%;
+    margin-left: 5%;
+  }
+
+  .imagenes--primarias {
+    display: flex;
+    justify-content: center;
+  }
+
+  .imagen--primaria {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .contenedor__precios {
+    display: flex;
+    align-items: end;
+    gap: 5%;
+  }
+
+  .contenedor__de--id {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .no-copiar {
+    user-select: none;
+  }
+
+  .Id-producto {
+    display: inline-block;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: rgba(255, 127, 80, 0.525);
+    font-family: 'Roboto Condensed', sans-serif;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  .imagenes--secundarias {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    gap: 5px;
+    
+  }
+
+  .imagen--secundaria {
+    width: 70%;
+  }
+
+  .precios {
+    font-family: 'Fraunces', serif;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 0 5% 2% 5%;
+    gap: 10px;
+  }
+
+  .precio__con-descuento {
+    font-size: 4rem;
+    color: coral;
+    font-weight: bold;
+  }
+
+  .precio__sin--descuento {
+    font-size: 2.5rem;
+    text-decoration: line-through;
+    color: gray;
+  }
+
+  .descripciones {
+    padding: 2% 5%;
+    font-size: 1.5rem;
+  }
+
+  .btn__encargar {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .boton__hacer--encargo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 60%;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    background-color: chocolate;
+    text-decoration: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .txt__btn--encargar {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Fraunces', serif;
+  }
+}
 
 /* ↓↓ MOVIL ↓↓ */
 @media only screen and (min-width: 200px) and (max-width: 525px) {
