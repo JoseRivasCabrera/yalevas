@@ -77,7 +77,10 @@ function cargarDetallesProducto(id) {
       <div class="precios">
         <h3 class="precio__con-descuento">${'¢' + productoEncontrado.precioNeto}</h3>
         <h3 class="precio__sin--descuento">${'¢' + productoEncontrado.precioDescuento}</h3>
-        <p class="Id-producto">ID:${productoEncontrado.id}</p>
+        <div class="contenedor__de--id">
+        <p class="Id-producto"><span class="no-copiar">ID:</span>${productoEncontrado.id}</p>
+        </div>
+        
       </div>
 
       <div class="descripciones">

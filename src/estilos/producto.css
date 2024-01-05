@@ -35,19 +35,25 @@
     max-width: 100%;
   }
 
+  .contenedor__de--id {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .no-copiar {
+    user-select: none;
+  }
+
   .Id-producto {
-    margin-top: 2%;
-    margin-left: 17%;
     display: inline-block;
     padding: 6px;
-    border: 1px solid black;
     border-radius: 10px;
     font-size: 1rem;
     font-weight: bold;
-    background-color: lightgray;
+    background-color: rgba(255, 127, 80, 0.525);
     font-family: 'Roboto Condensed', sans-serif;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-    width: 33%;
     text-align: center;
   }
 
@@ -66,7 +72,8 @@
     font-family: 'Fraunces', serif;
     display: flex;
     align-items: end;
-    padding: 0 5%  2% 5%;
+    justify-content: space-between;
+    padding: 0 5% 2% 5%;
     gap: 10px;
   }
 
@@ -95,6 +102,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.1);
   }
 
   .boton__hacer--encargo {
@@ -106,7 +114,7 @@
     border-radius: 15px;
     background-color: chocolate;
     text-decoration: none;
-    
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   }
 
   .txt__btn--encargar {
