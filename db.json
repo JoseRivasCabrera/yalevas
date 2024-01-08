@@ -86,7 +86,7 @@
     },
     {
       "id": "BYOS008",
-      "nombre": "Mochila Dibujos Animados",
+      "nombre": "Mochila de Carritos",
       "numbVentas": "4",
       "precioNeto": "9.570",
       "precioDescuento": "10.530",
@@ -98,7 +98,7 @@
     },
     {
       "id": "BYOS009",
-      "nombre": "Mochila Dinosaurio cute",
+      "nombre": "Mochila de Dinosaurio",
       "numbVentas": "3",
       "precioNeto": "10.010",
       "precioDescuento": "11.015",
@@ -134,7 +134,7 @@
     },
     {
       "id": "BYOS012",
-      "nombre": "Mochila Estilo Unicornio",
+      "nombre": "Mochila de Unicornio",
       "numbVentas": "7",
       "precioNeto": "23.870",
       "precioDescuento": "26.260",
@@ -146,7 +146,7 @@
     },
     {
       "id": "BYOS013",
-      "nombre": "Dulce Mochila De Unicornio",
+      "nombre": "Mochila De Unicornio",
       "numbVentas": "11",
       "precioNeto": "18.810",
       "precioDescuento": "20.690",
@@ -482,7 +482,7 @@
     },
     {
       "id": "BYOS041",
-      "nombre": "Mochila tipo Senderismo",
+      "nombre": "Mochila de Senderismo",
       "numbVentas": "3",
       "precioNeto": "18.680",
       "precioDescuento": "20.545",
@@ -530,7 +530,7 @@
     },
     {
       "id": "BYOS045",
-      "nombre": "Mochila forma Dinosaurio",
+      "nombre": "Mochila de Dinosaurio",
       "numbVentas": "3",
       "precioNeto": "8.780",
       "precioDescuento": "9.655",
@@ -554,7 +554,7 @@
     },
     {
       "id": "BYOS047",
-      "nombre": "Mochila tipo Senderismo",
+      "nombre": "Mochila de Senderismo",
       "numbVentas": "7",
       "precioNeto": "12.090",
       "precioDescuento": "13.300",
